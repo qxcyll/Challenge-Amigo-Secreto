@@ -1,0 +1,279 @@
+:root {
+    --color-primary: #000000;
+    --color-secondary: #292929;
+    --color-tertiary: #2f2e30;
+    --color-placeholder: #202020;;
+    --color-button: #141414;
+    --color-button-hover: #ececeb;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+    animation: colors 15s ease infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+/* Seção de entrada */
+.input-section {
+    background: rgb(41, 41, 41);
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 38%;
+    justify-content: center;
+    margin-bottom: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    min-width: 400px;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 48px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.section-title {
+    font-family: "Poppins", serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contêineres de entrada e botão */
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-name {
+    width: 100%;
+    height: 148%;
+    padding: 10px;
+    padding-right: 60px;
+    padding-left: 25px;
+    border-radius: 15px 15px 15px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: var(--color-placeholder);
+    color: var(--color-white);
+}
+
+.button-container {
+    width: 200px;
+    justify-content: center;
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    width: 100%;
+    padding: 10px 60px 10px 15px; /* padding-right aumentado para caber o botão */
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    font-family: "Poppins", serif;
+    box-shadow: 0 4px 8px rgba(34, 35, 36, 0.3);
+    background-color: transparent;
+    color: white;
+}
+
+/* Estilos de botão */
+button {
+    padding: 15px 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button-add {
+    position: absolute;
+    top: 35%;
+    right: 18px;
+    height: 32px;
+    padding: 0 15px;
+    background-color: var(--color-button);
+    border: none;
+    color: var(--color-white);
+    border-radius: 20px;
+    font-size: 14px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.button-add:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.botao-excluir {
+    background-color: rgba(95, 2, 2);
+    opacity: 0.5;
+    border: none;
+    color: var(--color-white);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 30px;
+    border-radius: 10px;
+    font-size: small;
+    cursor: pointer;
+    transition: transform 0.3s, visibility 0.3s, opacity 0.3s, background-color 0.3s;
+}   
+
+.botao-excluir:hover {
+    background-color: red;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.botao-editar {
+    background-color: var(--color-secondary);
+    opacity: 0.5;
+    color: var(--color-white);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 30px;
+    border-radius: 10px;
+    font-size: small;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: transform 0.3s, visibility 0.3s, opacity 0.3s, background-color 0.3s;
+}
+
+.botao-editar:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-white);
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: "Poppins";
+    font-weight: 500%;
+    text-align: center;
+}
+
+/* Botão de sortear título */
+.button-draw {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--color-button);
+    color: var(--color-white);
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-draw img {
+    position: absolute;
+    left: 20px;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.button-draw span {
+    transition: transform 0.3s ease;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+    color: var(--color-primary);
+    transform: scale(1.1);
+}
+
+.button-draw:hover img {
+    color: var(--color-text);
+    opacity: 1;
+    transform: scale(1);
+}
+
+.button-draw:hover span {
+    transform: translateX(10px);
+}
