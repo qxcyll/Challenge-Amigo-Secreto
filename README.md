@@ -1,8 +1,6 @@
 
 # Jogo do Amigo Secreto
 
----
-
 ### O que é o projeto Amigo Secreto?
 
 O projeto **Amigo Secreto** é uma aplicação web desenvolvida com HTML, CSS e JavaScript, durante o curso da Oracle Next Education, que permite adicionar nomes de amigos e realizar o sorteio de um amigo secreto.
@@ -42,5 +40,5 @@ Basicamente você vai:
 
 ### 👨🏻‍💻 Autor
 
-| [<img loading="lazy" src="https://github.com/Qxcyll.png" width=115><br><sub>Gabriel M.</sub>](https://github.com/Qxcyll) |
+| [<img loading="lazy" src="https://github.com/qxcyll.png" width=115><br><sub>Gabriel M.</sub>](https://github.com/qxcyll) |
 | :---: |
